@@ -1,856 +1,513 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<meta name="google-site-verification" content="jTY59aQVwZSFSyI_dDipoTeV7MFigvFfeYlOvDNFQpo" />
     <meta charset="UTF-8">
-    <meta name="google-site-verification" content="5NRizSjqfzN2SlsbZcxNPfJnhIAB7f-c_LEm0G6liZ4" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="PokerCoaching - Improve your poker skills with professional training, strategy guides, and personalized coaching sessions.">
-    <meta name="keywords" content="poker coaching, poker training, poker strategy, poker lessons, online poker">
-    <meta name="author" content="PokerCoaching">
-    <meta property="og:title" content="PokerCoaching - Professional Poker Training">
-    <meta property="og:description" content="Elevate your poker game with expert coaching and proven strategies.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.pokercoaching.com">
-    <meta property="og:image" content="https://images.unsplash.com/photo-1593510987185-1ec2256148a3">
-    
-    <title>PokerCoaching | Professional Poker Training & Strategy Guides</title>
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-    
+    <meta name="description" content="Looking for a Forter alternative? Our advanced fraud prevention solution offers real-time protection, chargeback reduction, and seamless integration for eCommerce businesses.">
+    <meta name="keywords" content="Forter alternative, fraud prevention, eCommerce security, chargeback protection, payment fraud solution">
+    <title>SecureCheck | Advanced Forter Alternative for Fraud Prevention</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         :root {
-            --primary: #1a2a3a;
-            --secondary: #d4af37;
-            --accent: #c1272d;
-            --light: #f8f9fa;
-            --dark: #212529;
-            --gray: #6c757d;
-        }
-        
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --accent-color: #e74c3c;
+            --light-color: #ecf0f1;
+            --dark-color: #2c3e50;
         }
         
         body {
-            font-family: 'Montserrat', sans-serif;
-            line-height: 1.6;
-            color: var(--dark);
-            background-color: var(--light);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333;
         }
         
-        h1, h2, h3, h4 {
-            font-family: 'Playfair Display', serif;
+        .navbar {
+            background-color: var(--primary-color);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .navbar-brand {
             font-weight: 700;
-            margin-bottom: 1rem;
-            color: var(--primary);
+            color: white !important;
         }
         
-        h1 {
-            font-size: 2.5rem;
-        }
-        
-        h2 {
-            font-size: 2rem;
-            color: var(--primary);
-        }
-        
-        h3 {
-            font-size: 1.5rem;
-        }
-        
-        p {
-            margin-bottom: 1rem;
-        }
-        
-        a {
-            text-decoration: none;
-            color: var(--secondary);
-            transition: color 0.3s;
-        }
-        
-        a:hover {
-            color: var(--accent);
-        }
-        
-        .container {
-            width: 100%;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-        
-        .btn {
-            display: inline-block;
-            padding: 12px 24px;
-            background-color: var(--secondary);
-            color: var(--primary);
-            border: none;
-            border-radius: 4px;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            cursor: pointer;
-            transition: all 0.3s;
-        }
-        
-        .btn:hover {
-            background-color: var(--accent);
-            color: white;
-            transform: translateY(-2px);
-        }
-        
-        .btn-outline {
-            background-color: transparent;
-            border: 2px solid var(--secondary);
-            color: var(--secondary);
-        }
-        
-        .btn-outline:hover {
-            background-color: var(--secondary);
-            color: var(--primary);
-        }
-        
-        /* Header */
-        header {
-            background-color: var(--primary);
-            color: white;
-            padding: 20px 0;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        }
-        
-        .header-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        
-        .logo {
-            font-size: 1.8rem;
-            font-weight: 700;
-            color: var(--secondary);
-        }
-        
-        .logo span {
-            color: white;
-        }
-        
-        nav ul {
-            display: flex;
-            list-style: none;
-        }
-        
-        nav ul li {
-            margin-left: 30px;
-        }
-        
-        nav ul li a {
-            color: white;
+        .nav-link {
+            color: rgba(255,255,255,0.8) !important;
             font-weight: 500;
         }
         
-        nav ul li a:hover {
-            color: var(--secondary);
+        .nav-link:hover {
+            color: white !important;
         }
         
-        .mobile-menu-btn {
-            display: none;
-            background: none;
-            border: none;
+        .hero-section {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
             color: white;
-            font-size: 1.5rem;
-            cursor: pointer;
+            padding: 100px 0;
+            position: relative;
+            overflow: hidden;
         }
         
-        /* Hero Section */
-        .hero {
-            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
-                        url('https://images.unsplash.com/photo-1593510987185-1ec2256148a3') no-repeat center center/cover;
-            height: 100vh;
-            display: flex;
-            align-items: center;
-            text-align: center;
-            color: white;
-            padding-top: 80px;
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80') no-repeat center center/cover;
+            opacity: 0.2;
         }
         
         .hero-content {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        
-        .hero h1 {
-            font-size: 3.5rem;
-            margin-bottom: 20px;
-            color: white;
-        }
-        
-        .hero p {
-            font-size: 1.2rem;
-            margin-bottom: 30px;
-        }
-        
-        /* Features Section */
-        .features {
-            padding: 80px 0;
-            background-color: white;
+            position: relative;
+            z-index: 2;
         }
         
         .section-title {
-            text-align: center;
-            margin-bottom: 50px;
-        }
-        
-        .section-title h2 {
+            color: var(--primary-color);
             position: relative;
-            display: inline-block;
-            padding-bottom: 15px;
+            margin-bottom: 40px;
+            font-weight: 700;
         }
         
-        .section-title h2::after {
+        .section-title::after {
             content: '';
             position: absolute;
-            bottom: 0;
+            bottom: -15px;
             left: 50%;
             transform: translateX(-50%);
             width: 80px;
             height: 3px;
-            background-color: var(--secondary);
-        }
-        
-        .features-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
+            background-color: var(--secondary-color);
         }
         
         .feature-card {
-            background-color: var(--light);
-            border-radius: 8px;
+            border: none;
+            border-radius: 10px;
             overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            height: 100%;
         }
         
         .feature-card:hover {
             transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
         }
         
-        .feature-img {
-            height: 200px;
-            overflow: hidden;
+        .feature-icon {
+            font-size: 2.5rem;
+            color: var(--secondary-color);
+            margin-bottom: 20px;
         }
         
-        .feature-img img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.5s;
+        .btn-primary {
+            background-color: var(--secondary-color);
+            border-color: var(--secondary-color);
+            padding: 10px 25px;
+            font-weight: 500;
         }
         
-        .feature-card:hover .feature-img img {
-            transform: scale(1.1);
+        .btn-primary:hover {
+            background-color: #2980b9;
+            border-color: #2980b9;
         }
         
-        .feature-content {
-            padding: 20px;
+        .btn-outline-primary {
+            color: var(--secondary-color);
+            border-color: var(--secondary-color);
+            padding: 10px 25px;
+            font-weight: 500;
         }
         
-        .feature-content h3 {
+        .btn-outline-primary:hover {
+            background-color: var(--secondary-color);
+            color: white;
+        }
+        
+        .stats-section {
+            background-color: var(--light-color);
+            padding: 80px 0;
+        }
+        
+        .stat-item {
+            text-align: center;
+        }
+        
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--secondary-color);
             margin-bottom: 10px;
         }
         
-        /* About Section */
-        .about {
-            padding: 80px 0;
-            background-color: var(--light);
-        }
-        
-        .about-container {
-            display: flex;
-            align-items: center;
-            gap: 50px;
-        }
-        
-        .about-img {
-            flex: 1;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-        }
-        
-        .about-img img {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
-        
-        .about-content {
-            flex: 1;
-        }
-        
-        /* Coaches Section */
-        .coaches {
-            padding: 80px 0;
+        .testimonial-card {
             background-color: white;
-        }
-        
-        .coaches-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
-        }
-        
-        .coach-card {
-            background-color: var(--light);
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-            text-align: center;
-        }
-        
-        .coach-img {
-            height: 300px;
-            overflow: hidden;
-        }
-        
-        .coach-img img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-        
-        .coach-info {
-            padding: 20px;
-        }
-        
-        .coach-info h3 {
-            margin-bottom: 5px;
-        }
-        
-        .coach-info p.specialty {
-            color: var(--secondary);
-            font-weight: 600;
-            margin-bottom: 15px;
-        }
-        
-        .social-links {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            margin-top: 15px;
-        }
-        
-        .social-links a {
-            color: var(--gray);
-            font-size: 1.2rem;
-            transition: color 0.3s;
-        }
-        
-        .social-links a:hover {
-            color: var(--secondary);
-        }
-        
-        /* Testimonials */
-        .testimonials {
-            padding: 80px 0;
-            background-color: var(--light);
-        }
-        
-        .testimonials-slider {
-            max-width: 800px;
-            margin: 0 auto;
-            position: relative;
-        }
-        
-        .testimonial {
-            background-color: white;
+            border-radius: 10px;
             padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-            text-align: center;
-            display: none;
-        }
-        
-        .testimonial.active {
-            display: block;
-            animation: fadeIn 0.5s ease-in-out;
-        }
-        
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            margin: 15px;
         }
         
         .testimonial-text {
             font-style: italic;
             margin-bottom: 20px;
-            position: relative;
         }
         
-        .testimonial-text::before,
-        .testimonial-text::after {
-            content: '"';
-            font-size: 2rem;
-            color: var(--secondary);
-            opacity: 0.5;
+        .client-name {
+            font-weight: 700;
+            color: var(--primary-color);
         }
         
-        .testimonial-author {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 15px;
-        }
-        
-        .author-img {
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            overflow: hidden;
-        }
-        
-        .author-img img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-        
-        .author-info h4 {
-            margin-bottom: 5px;
-        }
-        
-        .author-info p {
-            color: var(--gray);
+        .client-title {
+            color: #7f8c8d;
             font-size: 0.9rem;
         }
         
-        .slider-controls {
-            display: flex;
-            justify-content: center;
-            margin-top: 30px;
-            gap: 10px;
-        }
-        
-        .slider-dot {
-            width: 12px;
-            height: 12px;
-            border-radius: 50%;
-            background-color: var(--gray);
-            cursor: pointer;
-            transition: all 0.3s;
-        }
-        
-        .slider-dot.active {
-            background-color: var(--secondary);
-            transform: scale(1.2);
-        }
-        
-        /* Pricing */
-        .pricing {
-            padding: 80px 0;
-            background-color: white;
-        }
-        
-        .pricing-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-        }
-        
         .pricing-card {
-            background-color: var(--light);
-            border-radius: 8px;
+            border: none;
+            border-radius: 10px;
             overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+        }
+        
+        .pricing-header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 20px;
             text-align: center;
-            padding: 40px 30px;
-            transition: transform 0.3s;
-        }
-        
-        .pricing-card:hover {
-            transform: translateY(-10px);
-        }
-        
-        .pricing-card.popular {
-            border: 2px solid var(--secondary);
-            position: relative;
-        }
-        
-        .popular-badge {
-            position: absolute;
-            top: 0;
-            right: 20px;
-            background-color: var(--secondary);
-            color: var(--primary);
-            padding: 5px 15px;
-            font-weight: 600;
-            border-radius: 0 0 5px 5px;
-            text-transform: uppercase;
-            font-size: 0.8rem;
         }
         
         .price {
-            font-size: 2.5rem;
+            font-size: 3rem;
             font-weight: 700;
-            color: var(--primary);
             margin: 20px 0;
         }
         
         .price span {
             font-size: 1rem;
-            color: var(--gray);
+            font-weight: normal;
         }
         
         .pricing-features {
-            margin: 30px 0;
-            text-align: left;
+            padding: 0;
+            list-style: none;
         }
         
         .pricing-features li {
-            margin-bottom: 10px;
-            list-style: none;
+            padding: 10px 20px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .pricing-features li:last-child {
+            border-bottom: none;
+        }
+        
+        .pricing-card.popular {
+            transform: scale(1.05);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
             position: relative;
-            padding-left: 25px;
         }
         
-        .pricing-features li::before {
-            content: '\f00c';
-            font-family: 'Font Awesome 6 Free';
-            font-weight: 900;
+        .popular-badge {
             position: absolute;
-            left: 0;
-            color: var(--secondary);
-        }
-        
-        /* CTA Section */
-        .cta {
-            padding: 100px 0;
-            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
-                        url('https://images.unsplash.com/photo-1531045535792-b515d59c3d1f') no-repeat center center/cover;
+            top: -10px;
+            right: 20px;
+            background-color: var(--accent-color);
             color: white;
-            text-align: center;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
         }
         
-        .cta h2 {
-            color: white;
-            margin-bottom: 20px;
-        }
-        
-        .cta p {
-            max-width: 700px;
-            margin: 0 auto 30px;
-        }
-        
-        /* Footer */
         footer {
-            background-color: var(--primary);
+            background-color: var(--dark-color);
             color: white;
             padding: 60px 0 20px;
         }
         
-        .footer-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 40px;
-            margin-bottom: 40px;
-        }
-        
-        .footer-logo {
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: var(--secondary);
+        .footer-links h5 {
             margin-bottom: 20px;
-            display: inline-block;
-        }
-        
-        .footer-logo span {
-            color: white;
-        }
-        
-        .footer-about p {
-            margin-bottom: 20px;
-        }
-        
-        .footer-links h3, 
-        .footer-contact h3 {
-            color: white;
-            margin-bottom: 20px;
-            font-size: 1.2rem;
+            font-weight: 600;
         }
         
         .footer-links ul {
             list-style: none;
+            padding: 0;
         }
         
-        .footer-links ul li {
+        .footer-links li {
             margin-bottom: 10px;
         }
         
-        .footer-links ul li a {
-            color: var(--gray);
-            transition: color 0.3s;
+        .footer-links a {
+            color: rgba(255,255,255,0.7);
+            text-decoration: none;
+            transition: color 0.3s ease;
         }
         
-        .footer-links ul li a:hover {
-            color: var(--secondary);
+        .footer-links a:hover {
+            color: white;
         }
         
-        .contact-info {
-            margin-bottom: 20px;
-        }
-        
-        .contact-info p {
-            margin-bottom: 10px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-        
-        .contact-info i {
-            color: var(--secondary);
-        }
-        
-        .footer-social {
-            display: flex;
-            gap: 15px;
-        }
-        
-        .footer-social a {
+        .social-icons a {
             color: white;
             font-size: 1.2rem;
-            transition: color 0.3s;
+            margin-right: 15px;
+            transition: color 0.3s ease;
         }
         
-        .footer-social a:hover {
-            color: var(--secondary);
+        .social-icons a:hover {
+            color: var(--secondary-color);
         }
         
         .copyright {
-            text-align: center;
+            border-top: 1px solid rgba(255,255,255,0.1);
             padding-top: 20px;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-            color: var(--gray);
+            margin-top: 40px;
+            color: rgba(255,255,255,0.5);
             font-size: 0.9rem;
-        }
-        
-        /* Responsive Styles */
-        @media (max-width: 992px) {
-            .about-container {
-                flex-direction: column;
-            }
-            
-            .about-img, 
-            .about-content {
-                flex: none;
-                width: 100%;
-            }
-        }
-        
-        @media (max-width: 768px) {
-            h1 {
-                font-size: 2rem;
-            }
-            
-            h2 {
-                font-size: 1.8rem;
-            }
-            
-            .hero h1 {
-                font-size: 2.5rem;
-            }
-            
-            nav ul {
-                position: fixed;
-                top: 80px;
-                left: -100%;
-                width: 100%;
-                height: calc(100vh - 80px);
-                background-color: var(--primary);
-                flex-direction: column;
-                align-items: center;
-                padding-top: 40px;
-                transition: left 0.3s;
-            }
-            
-            nav ul.active {
-                left: 0;
-            }
-            
-            nav ul li {
-                margin: 15px 0;
-            }
-            
-            .mobile-menu-btn {
-                display: block;
-            }
-        }
-        
-        @media (max-width: 576px) {
-            .hero {
-                padding-top: 60px;
-                height: auto;
-                padding-bottom: 60px;
-            }
-            
-            .hero h1 {
-                font-size: 2rem;
-            }
-            
-            .btn {
-                padding: 10px 20px;
-            }
         }
     </style>
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <div class="container header-container">
-            <a href="index.html" class="logo">Poker<span>Coaching</span></a>
-            <button class="mobile-menu-btn" id="mobileMenuBtn">
-                <i class="fas fa-bars"></i>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">SecureCheck</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
             </button>
-            <nav>
-                <ul id="navMenu">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#features">Features</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#coaches">Coaches</a></li>
-                    <li><a href="#pricing">Pricing</a></li>
-                    <li><a href="#contact">Contact</a></li>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#solutions">Solutions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#pricing">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimonials">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
                 </ul>
-            </nav>
+                <div class="ms-3">
+                    <a href="#demo" class="btn btn-outline-light">Request Demo</a>
+                </div>
+            </div>
         </div>
-    </header>
+    </nav>
 
     <!-- Hero Section -->
-    <section class="hero" id="home">
+    <section class="hero-section">
+        <div class="container hero-content">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="display-4 fw-bold mb-4">The Best Forter Alternative for eCommerce Fraud Prevention</h1>
+                    <p class="lead mb-4">SecureCheck provides advanced fraud detection and prevention solutions that reduce chargebacks, increase approval rates, and protect your revenue.</p>
+                    <div class="d-flex gap-3">
+                        <a href="#demo" class="btn btn-primary btn-lg">Get Started</a>
+                        <a href="#features" class="btn btn-outline-light btn-lg">Learn More</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 d-none d-lg-block">
+                    <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Fraud prevention dashboard" class="img-fluid rounded shadow">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
         <div class="container">
-            <div class="hero-content">
-                <h1>Master Poker Like a Pro</h1>
-                <p>Elevate your game with personalized coaching from world-class poker professionals. Learn winning strategies, improve your decision-making, and maximize your profits.</p>
-                <a href="#pricing" class="btn">Get Started</a>
-                <a href="#features" class="btn btn-outline">Learn More</a>
+            <div class="row text-center">
+                <div class="col-md-3 col-6 stat-item">
+                    <div class="stat-number">98%</div>
+                    <p>Fraud Detection Accuracy</p>
+                </div>
+                <div class="col-md-3 col-6 stat-item">
+                    <div class="stat-number">60%</div>
+                    <p>Reduction in Chargebacks</p>
+                </div>
+                <div class="col-md-3 col-6 stat-item">
+                    <div class="stat-number">15%</div>
+                    <p>Increase in Approval Rates</p>
+                </div>
+                <div class="col-md-3 col-6 stat-item">
+                    <div class="stat-number">24/7</div>
+                    <p>Real-time Protection</p>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Features Section -->
-    <section class="features" id="features">
+    <section id="features" class="py-5">
         <div class="container">
-            <div class="section-title">
-                <h2>Why Choose PokerCoaching</h2>
-                <p>Our comprehensive training programs are designed to take your game to the next level</p>
-            </div>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-img">
-                        <img src="https://images.unsplash.com/photo-1581069700310-8cf2e1b6baf0" alt="Personalized Coaching">
-                    </div>
-                    <div class="feature-content">
-                        <h3>Personalized Coaching</h3>
-                        <p>One-on-one sessions tailored to your specific needs and skill level. Our coaches analyze your game and provide customized feedback.</p>
+            <h2 class="text-center section-title">Why Choose SecureCheck Over Forter</h2>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card feature-card p-4">
+                        <div class="text-center">
+                            <i class="fas fa-shield-alt feature-icon"></i>
+                            <h3>Advanced AI Protection</h3>
+                        </div>
+                        <p>Our machine learning algorithms analyze thousands of data points in real-time to detect and prevent sophisticated fraud attempts before they impact your business.</p>
+                        <p>Unlike traditional solutions, our AI continuously learns from new fraud patterns to stay ahead of emerging threats.</p>
                     </div>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-img">
-                        <img src="https://images.unsplash.com/photo-1519817650390-64a93db51149" alt="Strategy Guides">
-                    </div>
-                    <div class="feature-content">
-                        <h3>Comprehensive Strategy Guides</h3>
-                        <p>Access our library of proven strategies covering all aspects of poker from pre-flop to river play.</p>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card feature-card p-4">
+                        <div class="text-center">
+                            <i class="fas fa-bolt feature-icon"></i>
+                            <h3>Real-time Decisions</h3>
+                        </div>
+                        <p>Get instant approve/decline decisions with our sub-100ms response time, ensuring no delay in your checkout process while maintaining maximum security.</p>
+                        <p>Our system evaluates transactions in milliseconds without compromising on accuracy or customer experience.</p>
                     </div>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-img">
-                        <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4" alt="Hand Analysis">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card feature-card p-4">
+                        <div class="text-center">
+                            <i class="fas fa-random feature-icon"></i>
+                            <h3>Seamless Integration</h3>
+                        </div>
+                        <p>Implement our solution in days, not months, with our simple API and pre-built plugins for all major eCommerce platforms and payment gateways.</p>
+                        <p>No need for complex system overhauls - we work with your existing infrastructure.</p>
                     </div>
-                    <div class="feature-content">
-                        <h3>Hand Analysis</h3>
-                        <p>Submit your hand histories for detailed analysis. Learn from your mistakes and discover new opportunities.</p>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card feature-card p-4">
+                        <div class="text-center">
+                            <i class="fas fa-chart-line feature-icon"></i>
+                            <h3>Transparent Pricing</h3>
+                        </div>
+                        <p>Pay only for what you use with our flexible, transaction-based pricing model. No hidden fees or long-term contracts required.</p>
+                        <p>Unlike Forter, we offer clear, predictable costs that scale with your business.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card feature-card p-4">
+                        <div class="text-center">
+                            <i class="fas fa-headset feature-icon"></i>
+                            <h3>Dedicated Support</h3>
+                        </div>
+                        <p>Our fraud prevention experts are available 24/7 to help you optimize rules, analyze cases, and maximize your protection.</p>
+                        <p>Get white-glove service from implementation through ongoing optimization.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card feature-card p-4">
+                        <div class="text-center">
+                            <i class="fas fa-lock feature-icon"></i>
+                            <h3>Chargeback Guarantee</h3>
+                        </div>
+                        <p>We're so confident in our solution that we offer a chargeback guarantee on approved transactions.</p>
+                        <p>If fraud slips through, we'll cover the cost - something most competitors won't offer.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section class="about" id="about">
+    <!-- Solutions Section -->
+    <section id="solutions" class="py-5 bg-light">
         <div class="container">
-            <div class="about-container">
-                <div class="about-img">
-                    <img src="https://images.unsplash.com/photo-1565307528294-f70f3c7094e0" alt="About PokerCoaching">
-                </div>
-                <div class="about-content">
-                    <h2>About Our Coaching Program</h2>
-                    <p>PokerCoaching was founded by professional players who understand what it takes to succeed in today's competitive poker environment. We've helped thousands of players improve their win rates and move up in stakes.</p>
-                    <p>Our coaching methodology combines proven strategies with the latest game theory concepts. We focus not just on technical skills but also on the mental game and bankroll management.</p>
-                    <p>Whether you're a beginner looking to learn the fundamentals or an experienced player aiming for high stakes, we have the right program for you.</p>
-                    <a href="#coaches" class="btn">Meet Our Coaches</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Coaches Section -->
-    <section class="coaches" id="coaches">
-        <div class="container">
-            <div class="section-title">
-                <h2>Our Professional Coaches</h2>
-                <p>Learn from the best in the business</p>
-            </div>
-            <div class="coaches-grid">
-                <div class="coach-card">
-                    <div class="coach-img">
-                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d" alt="Coach John Smith">
-                    </div>
-                    <div class="coach-info">
-                        <h3>John Smith</h3>
-                        <p class="specialty">Cash Game Specialist</p>
-                        <p>With over $5 million in online earnings, John specializes in 6-max cash games from NL50 to NL1000.</p>
-                        <div class="social-links">
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fab fa-instagram"></i></a>
-                            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <h2 class="text-center section-title">Industry-Specific Solutions</h2>
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="row g-0">
+                            <div class="col-md-5">
+                                <img src="https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" class="img-fluid h-100 object-fit-cover" alt="Retail eCommerce">
+                            </div>
+                            <div class="col-md-7">
+                                <div class="card-body">
+                                    <h3>Retail eCommerce</h3>
+                                    <p>Protect your online store from fraudulent transactions, account takeovers, and promo abuse while maximizing legitimate order approval rates.</p>
+                                    <ul>
+                                        <li>CNP (Card Not Present) fraud prevention</li>
+                                        <li>New account fraud detection</li>
+                                        <li>Loyalty program protection</li>
+                                        <li>Return and refund abuse prevention</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="coach-card">
-                    <div class="coach-img">
-                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80" alt="Coach Sarah Johnson">
-                    </div>
-                    <div class="coach-info">
-                        <h3>Sarah Johnson</h3>
-                        <p class="specialty">Tournament Pro</p>
-                        <p>WSOP bracelet winner with $3.2M in live tournament earnings. Sarah excels in MTT strategy and final table play.</p>
-                        <div class="social-links">
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fab fa-instagram"></i></a>
-                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                <div class="col-lg-6">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="row g-0">
+                            <div class="col-md-5">
+                                <img src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" class="img-fluid h-100 object-fit-cover" alt="Digital Goods">
+                            </div>
+                            <div class="col-md-7">
+                                <div class="card-body">
+                                    <h3>Digital Goods & Services</h3>
+                                    <p>Prevent fraud in instant delivery environments where chargebacks can be particularly damaging to your bottom line.</p>
+                                    <ul>
+                                        <li>Gaming and virtual currency protection</li>
+                                        <li>Software and SaaS subscription fraud</li>
+                                        <li>Digital content and media protection</li>
+                                        <li>Gift card and voucher fraud prevention</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="coach-card">
-                    <div class="coach-img">
-                        <img src="https://images.unsplash.com/photo-1544725176-7c40e5a71c5e" alt="Coach Mike Chen">
+                <div class="col-lg-6">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="row g-0">
+                            <div class="col-md-5">
+                                <img src="https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" class="img-fluid h-100 object-fit-cover" alt="Travel">
+                            </div>
+                            <div class="col-md-7">
+                                <div class="card-body">
+                                    <h3>Travel & Hospitality</h3>
+                                    <p>Secure bookings while reducing false declines that can cost you valuable customers in this competitive industry.</p>
+                                    <ul>
+                                        <li>Airline ticket fraud prevention</li>
+                                        <li>Hotel booking protection</li>
+                                        <li>Loyalty point theft prevention</li>
+                                        <li>Last-minute booking fraud detection</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="coach-info">
-                        <h3>Mike Chen</h3>
-                        <p class="specialty">Heads-Up Expert</p>
-                        <p>Specializing in heads-up play, Mike has one of the highest win rates at NL500 heads-up over 2 million hands.</p>
-                        <div class="social-links">
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fab fa-instagram"></i></a>
-                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="row g-0">
+                            <div class="col-md-5">
+                                <img src="https://images.unsplash.com/photo-1606787366850-de6330128bfc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" class="img-fluid h-100 object-fit-cover" alt="Marketplaces">
+                            </div>
+                            <div class="col-md-7">
+                                <div class="card-body">
+                                    <h3>Marketplaces</h3>
+                                    <p>Protect both buyers and sellers in your peer-to-peer or B2B marketplace from all types of transactional fraud.</p>
+                                    <ul>
+                                        <li>Seller fraud prevention</li>
+                                        <li>Buyer fraud detection</li>
+                                        <li>Escrow payment protection</li>
+                                        <li>Account takeover prevention</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -859,231 +516,257 @@
     </section>
 
     <!-- Testimonials Section -->
-    <section class="testimonials">
+    <section id="testimonials" class="py-5">
         <div class="container">
-            <div class="section-title">
-                <h2>What Our Students Say</h2>
-                <p>Success stories from our coaching program</p>
-            </div>
-            <div class="testimonials-slider">
-                <div class="testimonial active">
-                    <div class="testimonial-text">
-                        <p>After just 3 months of coaching, I moved up from NL50 to NL200 and doubled my win rate. The personalized feedback was exactly what I needed to fix my leaks.</p>
-                    </div>
-                    <div class="testimonial-author">
-                        <div class="author-img">
-                            <img src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61" alt="David Wilson">
+            <h2 class="text-center section-title">What Our Customers Say</h2>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="testimonial-card">
+                        <div class="testimonial-text">
+                            "Since switching from Forter to SecureCheck, we've reduced our chargeback rate by 58% while increasing our approval rate by 12%. The implementation was seamless and their support team is exceptional."
                         </div>
-                        <div class="author-info">
-                            <h4>David Wilson</h4>
-                            <p>NL200 Regular</p>
+                        <div class="d-flex align-items-center">
+                            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Sarah Johnson" class="rounded-circle me-3" width="60">
+                            <div>
+                                <div class="client-name">Sarah Johnson</div>
+                                <div class="client-title">Director of eCommerce, FashionRetail Inc.</div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="testimonial">
-                    <div class="testimonial-text">
-                        <p>The tournament coaching helped me make my first major final table. I went from being a break-even player to consistently cashing in MTTs.</p>
-                    </div>
-                    <div class="testimonial-author">
-                        <div class="author-img">
-                            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2" alt="Emily Rodriguez">
+                <div class="col-lg-4">
+                    <div class="testimonial-card">
+                        <div class="testimonial-text">
+                            "We evaluated several Forter alternatives and SecureCheck stood out for its accuracy and transparent pricing. Their AI caught fraud patterns that other solutions missed, saving us thousands in potential losses."
                         </div>
-                        <div class="author-info">
-                            <h4>Emily Rodriguez</h4>
-                            <p>MTT Player</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial">
-                    <div class="testimonial-text">
-                        <p>I was stuck at NL100 for years. The hand analysis sessions identified key mistakes in my game that I wasn't aware of. Now I'm crushing NL500.</p>
-                    </div>
-                    <div class="testimonial-author">
-                        <div class="author-img">
-                            <img src="https://images.unsplash.com/photo-1566492031773-4f4e44671857" alt="James Kim">
-                        </div>
-                        <div class="author-info">
-                            <h4>James Kim</h4>
-                            <p>NL500 Grinder</p>
+                        <div class="d-flex align-items-center">
+                            <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Michael Chen" class="rounded-circle me-3" width="60">
+                            <div>
+                                <div class="client-name">Michael Chen</div>
+                                <div class="client-title">CTO, TechGadgets Online</div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="slider-controls">
-                    <div class="slider-dot active" data-slide="0"></div>
-                    <div class="slider-dot" data-slide="1"></div>
-                    <div class="slider-dot" data-slide="2"></div>
+                <div class="col-lg-4">
+                    <div class="testimonial-card">
+                        <div class="testimonial-text">
+                            "The chargeback guarantee gave us the confidence to switch. In 6 months with SecureCheck, we've had zero fraudulent chargebacks on approved transactions. Their solution pays for itself in fraud prevention."
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="David Rodriguez" class="rounded-circle me-3" width="60">
+                            <div>
+                                <div class="client-name">David Rodriguez</div>
+                                <div class="client-title">Head of Payments, TravelPlus</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Pricing Section -->
-    <section class="pricing" id="pricing">
+    <section id="pricing" class="py-5 bg-light">
         <div class="container">
-            <div class="section-title">
-                <h2>Pricing Plans</h2>
-                <p>Choose the perfect plan for your poker goals</p>
-            </div>
-            <div class="pricing-grid">
-                <div class="pricing-card">
-                    <h3>Basic</h3>
-                    <div class="price">$99<span>/month</span></div>
-                    <ul class="pricing-features">
-                        <li>4 hours of group coaching</li>
-                        <li>Access to strategy library</li>
-                        <li>Weekly hand review sessions</li>
-                        <li>Community forum access</li>
-                        <li>Basic leak finder tool</li>
-                    </ul>
-                    <a href="#" class="btn btn-outline">Choose Plan</a>
+            <h2 class="text-center section-title">Simple, Transparent Pricing</h2>
+            <p class="text-center mb-5">Pay only for what you use with no hidden fees. Scale up or down as needed.</p>
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="pricing-card">
+                        <div class="pricing-header">
+                            <h3>Starter</h3>
+                            <p>For small businesses</p>
+                        </div>
+                        <div class="card-body text-center">
+                            <div class="price">$0.10<span>/transaction</span></div>
+                            <ul class="pricing-features">
+                                <li>Up to 10,000 transactions/month</li>
+                                <li>Basic fraud detection</li>
+                                <li>Email support</li>
+                                <li>Standard integration</li>
+                                <li>Dashboard access</li>
+                            </ul>
+                            <a href="#" class="btn btn-outline-primary w-100">Get Started</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="pricing-card popular">
-                    <div class="popular-badge">Most Popular</div>
-                    <h3>Pro</h3>
-                    <div class="price">$249<span>/month</span></div>
-                    <ul class="pricing-features">
-                        <li>2 private coaching sessions</li>
-                        <li>Unlimited hand reviews</li>
-                        <li>Advanced strategy materials</li>
-                        <li>Personalized study plan</li>
-                        <li>Advanced analytics tools</li>
-                    </ul>
-                    <a href="#" class="btn">Choose Plan</a>
+                <div class="col-lg-4">
+                    <div class="pricing-card popular">
+                        <div class="popular-badge">Most Popular</div>
+                        <div class="pricing-header">
+                            <h3>Professional</h3>
+                            <p>For growing businesses</p>
+                        </div>
+                        <div class="card-body text-center">
+                            <div class="price">$0.08<span>/transaction</span></div>
+                            <ul class="pricing-features">
+                                <li>Up to 100,000 transactions/month</li>
+                                <li>Advanced AI detection</li>
+                                <li>Priority support</li>
+                                <li>API access</li>
+                                <li>Chargeback guarantee</li>
+                                <li>Custom rules engine</li>
+                            </ul>
+                            <a href="#" class="btn btn-primary w-100">Get Started</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="pricing-card">
-                    <h3>Elite</h3>
-                    <div class="price">$499<span>/month</span></div>
-                    <ul class="pricing-features">
-                        <li>4 private coaching sessions</li>
-                        <li>Daily hand reviews</li>
-                        <li>Premium strategy materials</li>
-                        <li>Customized training program</li>
-                        <li>1-on-1 with head coach</li>
-                        <li>Bankroll management plan</li>
-                    </ul>
-                    <a href="#" class="btn btn-outline">Choose Plan</a>
+                <div class="col-lg-4">
+                    <div class="pricing-card">
+                        <div class="pricing-header">
+                            <h3>Enterprise</h3>
+                            <p>For high-volume businesses</p>
+                        </div>
+                        <div class="card-body text-center">
+                            <div class="price">Custom</div>
+                            <ul class="pricing-features">
+                                <li>100,000+ transactions/month</li>
+                                <li>Premium AI detection</li>
+                                <li>24/7 dedicated support</li>
+                                <li>White-glove implementation</li>
+                                <li>Advanced analytics</li>
+                                <li>Account manager</li>
+                                <li>SLAs & custom solutions</li>
+                            </ul>
+                            <a href="#" class="btn btn-outline-primary w-100">Contact Sales</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- CTA Section -->
-    <section class="cta">
+    <section class="py-5" style="background-color: var(--secondary-color); color: white;">
         <div class="container">
-            <h2>Ready to Transform Your Poker Game?</h2>
-            <p>Join hundreds of players who have improved their skills and increased their profits with our proven coaching methods.</p>
-            <a href="#pricing" class="btn">Get Started Today</a>
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h2 class="mb-3">Ready to Reduce Fraud and Increase Revenue?</h2>
+                    <p class="mb-0">See how SecureCheck compares to Forter with a personalized demo and risk assessment.</p>
+                </div>
+                <div class="col-lg-4 text-lg-end">
+                    <a href="#" class="btn btn-light btn-lg">Request Demo</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center section-title">Contact Us</h2>
+            <div class="row">
+                <div class="col-lg-6">
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="company" class="form-label">Company</label>
+                            <input type="text" class="form-control" id="company" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+                <div class="col-lg-6 mt-4 mt-lg-0">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body">
+                            <h3 class="mb-4">Get in Touch</h3>
+                            <div class="mb-4">
+                                <h5><i class="fas fa-map-marker-alt me-2"></i> Headquarters</h5>
+                                <p>123 Security Plaza, Suite 500<br>San Francisco, CA 94107</p>
+                            </div>
+                            <div class="mb-4">
+                                <h5><i class="fas fa-phone me-2"></i> Phone</h5>
+                                <p>+1 (800) 123-4567</p>
+                            </div>
+                            <div class="mb-4">
+                                <h5><i class="fas fa-envelope me-2"></i> Email</h5>
+                                <p>sales@securecheck.com</p>
+                            </div>
+                            <div class="mb-4">
+                                <h5><i class="fas fa-clock me-2"></i> Support Hours</h5>
+                                <p>24/7/365</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer id="contact">
+    <footer>
         <div class="container">
-            <div class="footer-container">
-                <div class="footer-about">
-                    <a href="#" class="footer-logo">Poker<span>Coaching</span></a>
-                    <p>Professional poker coaching for players of all levels. Our mission is to help you achieve your poker goals through expert guidance and proven strategies.</p>
-                    <div class="footer-social">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h5 class="text-white mb-4">SecureCheck</h5>
+                    <p>The leading Forter alternative for eCommerce fraud prevention, helping businesses reduce chargebacks and increase revenue through advanced AI protection.</p>
+                    <div class="social-icons mt-4">
                         <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
                         <a href="#"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
-                <div class="footer-links">
-                    <h3>Quick Links</h3>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5>Solutions</h5>
                     <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#features">Features</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#coaches">Coaches</a></li>
-                        <li><a href="#pricing">Pricing</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#">Retail eCommerce</a></li>
+                        <li><a href="#">Digital Goods</a></li>
+                        <li><a href="#">Travel</a></li>
+                        <li><a href="#">Marketplaces</a></li>
+                        <li><a href="#">Financial Services</a></li>
                     </ul>
                 </div>
-                <div class="footer-contact">
-                    <h3>Contact Us</h3>
-                    <div class="contact-info">
-                        <p><i class="fas fa-map-marker-alt"></i> 123 Poker Street, Las Vegas, NV 89101</p>
-                        <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
-                        <p><i class="fas fa-envelope"></i> info@pokercoaching.com</p>
-                    </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5>Features</h5>
+                    <ul>
+                        <li><a href="#">Fraud Detection</a></li>
+                        <li><a href="#">Chargeback Prevention</a></li>
+                        <li><a href="#">Account Protection</a></li>
+                        <li><a href="#">Payment Security</a></li>
+                        <li><a href="#">API Integration</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5>Resources</h5>
+                    <ul>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">API Reference</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Case Studies</a></li>
+                        <li><a href="#">Webinars</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5>Company</h5>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Partners</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
                 </div>
             </div>
-            <div class="copyright">
-                <p>&copy; 2025 PokerCoaching. All Rights Reserved.</p>
+            <div class="copyright text-center">
+                <p>&copy; 2025 SecureCheck. All rights reserved. | <a href="#" class="text-white">Privacy Policy</a> | <a href="#" class="text-white">Terms of Service</a></p>
             </div>
         </div>
     </footer>
 
-    <script>
-        // Mobile Menu Toggle
-        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
-        const navMenu = document.getElementById('navMenu');
-        
-        mobileMenuBtn.addEventListener('click', () => {
-            navMenu.classList.toggle('active');
-            mobileMenuBtn.innerHTML = navMenu.classList.contains('active') 
-                ? '<i class="fas fa-times"></i>' 
-                : '<i class="fas fa-bars"></i>';
-        });
-        
-        // Close mobile menu when clicking on a link
-        const navLinks = document.querySelectorAll('#navMenu a');
-        navLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                navMenu.classList.remove('active');
-                mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
-            });
-        });
-        
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                
-                const targetId = this.getAttribute('href');
-                if (targetId === '#') return;
-                
-                const targetElement = document.querySelector(targetId);
-                if (targetElement) {
-                    window.scrollTo({
-                        top: targetElement.offsetTop - 80,
-                        behavior: 'smooth'
-                    });
-                }
-            });
-        });
-        
-        // Testimonial Slider
-        const testimonials = document.querySelectorAll('.testimonial');
-        const dots = document.querySelectorAll('.slider-dot');
-        let currentSlide = 0;
-        
-        function showSlide(index) {
-            testimonials.forEach(testimonial => testimonial.classList.remove('active'));
-            dots.forEach(dot => dot.classList.remove('active'));
-            
-            testimonials[index].classList.add('active');
-            dots[index].classList.add('active');
-            currentSlide = index;
-        }
-        
-        dots.forEach((dot, index) => {
-            dot.addEventListener('click', () => showSlide(index));
-        });
-        
-        // Auto slide change
-        setInterval(() => {
-            let nextSlide = (currentSlide + 1) % testimonials.length;
-            showSlide(nextSlide);
-        }, 5000);
-        
-        // Sticky header on scroll
-        window.addEventListener('scroll', () => {
-            const header = document.querySelector('header');
-            header.classList.toggle('sticky', window.scrollY > 0);
-        });
-    </script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
